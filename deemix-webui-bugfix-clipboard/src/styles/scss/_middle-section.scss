@@ -1,0 +1,120 @@
+/* Middle section */
+#middle_section {
+	background-color: var(--main-background);
+	width: 100%;
+	height: 100%;
+	min-width: 10px;
+}
+
+/* Center section */
+$icon-dimension: 2rem;
+$searchbar-height: calc(2rem + 1em);
+
+#search {
+	background-color: var(--secondary-background);
+	width: 100%;
+	padding: 0 1em;
+	margin-bottom: 20px;
+	margin-right: 32px;
+	display: flex;
+	align-items: center;
+	border: 1px solid transparent;
+	transition: border 200ms ease-in-out;
+
+	.search__icon {
+		width: $icon-dimension;
+		height: $icon-dimension;
+
+		i {
+			font-size: $icon-dimension;
+			color: var(--foreground);
+
+			@include remove-selection-background;
+		}
+	}
+
+	&:focus-within {
+		border: 1px solid var(--foreground);
+	}
+
+	#searchbar {
+		height: $searchbar-height;
+		padding-left: 0.5em;
+		border: 0px;
+		border-radius: 0px;
+		background-color: var(--secondary-background);
+		color: var(--foreground);
+		font-size: 2rem;
+		font-family: 'Open Sans';
+		font-weight: 300;
+
+		&:focus {
+			outline: none;
+		}
+
+		// Removing Chrome autofill color
+		&:-webkit-autofill,
+		&:-webkit-autofill:hover,
+		&:-webkit-autofill:focus,
+		&:-webkit-autofill:active {
+			-webkit-box-shadow: 0 0 0 $searchbar-height var(--secondary-background) inset !important;
+			box-shadow: 0 0 0 $searchbar-height var(--secondary-background) inset !important;
+		}
+	}
+}
+
+#content {
+	background-color: var(--main-background);
+	// width: calc(100% - 10px);
+	width: 100%;
+	height: calc(100% - 93px);
+	overflow-y: scroll;
+	overflow-x: hidden;
+	// padding-left: 10px;
+
+	&::-webkit-scrollbar {
+		width: 10px;
+	}
+
+	&::-webkit-scrollbar-track {
+		background: var(--main-background);
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: var(--main-scroll);
+		border-radius: 4px;
+		width: 6px;
+		padding: 0px 2px;
+	}
+}
+
+#container {
+	--container-width: 95%;
+
+	@media only screen and (min-width: $small) {
+		--container-width: 85%;
+	}
+
+	@media only screen and (min-width: $medium) {
+		--container-width: 70%;
+	}
+}
+
+#container {
+	margin: 0 auto;
+	max-width: 1280px;
+	width: var(--container-width);
+}
+
+/* Modal Content */
+.smallmodal-content {
+	--modal-content-width: 95%;
+
+	@media only screen and (min-width: $small) {
+		--modal-content-width: 85%;
+	}
+
+	@media only screen and (min-width: $medium) {
+		--modal-content-width: 70%;
+	}
+}

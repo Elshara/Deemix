@@ -1,0 +1,11 @@
+{
+	"search.exclude": {
+		"**/*.map": true,
+		"public/css": true,
+		"public/js": true
+	},
+	"path-intellisense.mappings": {
+		"@": "${workspaceRoot}/src",
+		"@components": "${workspaceRoot}/src/js/components"
+	}
+}

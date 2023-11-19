@@ -1,0 +1,86 @@
+:root {
+  --main-modal-background: #121212;
+}
+
+body, .tabs, .card, .modal, input, .collapsible-header{
+  background-color: #121212;
+  color: white;
+}
+input[type=range]::-webkit-slider-runnable-track{
+	background-color: #0B0B0B;
+}
+input[type=range] {
+  border: 1px solid #121212;
+}
+/*nav{
+  filter: hue-rotate(220deg);
+}
+#slide-out div.user-view>div.background{
+  filter: hue-rotate(220deg);
+}*/
+
+#modal_login{
+  background-color: #23232c;
+}
+
+.sidenav, .dropdown-content li>span{
+  background-color: #121212;
+}
+.sidenav li>a{
+  color: #d8d8d8
+}
+.sidenav li>a:hover{
+  background-color: rgba(255,255,255,0.05);
+}
+.sidenav li>a>i.material-icons{
+  color: white;
+}
+
+.select-wrapper .caret{
+  fill: white;
+}
+.divider{
+  background-color: #d8d8d8;
+}
+
+.collapsible-header, .collapsible{
+  border-color: #353535;
+}
+
+table.striped>tbody>tr:nth-child(odd){
+  background-color: #212121
+}
+
+::-webkit-scrollbar-track, .progress{
+  background-color: #1d1d1d;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #4373E8;
+}
+
+body::-webkit-scrollbar-track {
+	background: #1d1d1d;
+}
+body::-webkit-scrollbar-thumb {
+	background: #4373E8;
+}
+
+
+.modal-footer{
+  background-color: #121212 !important;
+}
+#page_footer{
+  background-color: #1e1e1e;
+  color: white
+}
+.btn-flat{
+  color: #c3c3c3;
+}
+.chip{
+  background-color: #1d1d1d;
+  color: white;
+}
+table.highlight>tbody>tr:hover{
+  background-color: #212121;
+}

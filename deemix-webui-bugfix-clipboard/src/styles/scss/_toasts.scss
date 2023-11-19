@@ -1,0 +1,26 @@
+.toast-icon {
+	display: inline-block;
+	margin-right: 8px;
+}
+
+.circle-loader {
+	display: inline-block;
+	border: 2px solid var(--accent-color);
+	border-radius: 50%;
+	border-bottom: 2px solid var(--secondary-background);
+	width: 16px;
+	height: 16px;
+	animation: spin 1s linear infinite;
+}
+
+.toastify {
+	display: flex;
+	align-items: center;
+	box-shadow: 0 3px 6px -1px rgba(0, 0, 0, 0.12), 0 10px 36px -4px rgba(0, 0, 0, 0.3);
+	background: var(--toast-background);
+	color: var(--toast-text);
+
+	.circle-loader {
+		border-bottom-color: var(--toast-secondary);
+	}
+}

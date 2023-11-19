@@ -1,0 +1,198 @@
+#download_tab_container {
+	height: 100%;
+	background-color: var(--panels-background);
+	color: var(--panels-text);
+	display: block;
+	flex-direction: column;
+
+	&.tab_hidden {
+		width: 32px;
+
+		#toggle_download_tab {
+			margin-left: 4px;
+
+			&::before {
+				font-family: 'Material Icons';
+				font-style: normal;
+				font-weight: 400;
+				content: 'chevron_left';
+			}
+		}
+
+		#download_tab_drag_handler {
+			display: none;
+		}
+
+		#queue_buttons {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		#download_list {
+			display: none;
+		}
+
+		#download_tab_label {
+			opacity: 1;
+			visibility: visible;
+		}
+
+		&::after {
+			content: attr(data-label);
+			display: flex;
+			align-items: center;
+			text-transform: capitalize;
+			writing-mode: vertical-rl;
+			line-height: 32px;
+		}
+	}
+}
+
+#toggle_download_tab {
+	width: 25px;
+	height: 25px;
+	margin-left: 20px;
+
+	&::before {
+		font-family: 'Material Icons';
+		font-style: normal;
+		font-weight: 400;
+		content: 'chevron_right';
+	}
+}
+
+.download_bar_icon {
+	cursor: pointer;
+	font-size: 24px;
+	margin: 4px;
+}
+
+#download_list {
+	width: 100%;
+	height: calc(100% - 32px);
+	padding: 0px 8px 0px 28px;
+	overflow-y: scroll;
+
+	> .download_object {
+		padding-bottom: 8px;
+
+		.download_info {
+			display: flex;
+			align-items: center;
+
+			img {
+				width: 75px;
+				height: 75px;
+				display: inline-block;
+				flex-shrink: 0;
+			}
+
+			.download_line {
+				display: block;
+			}
+
+			.download_slim_separator {
+				display: none;
+			}
+		}
+
+		.download_info_data {
+			width: 100%;
+			margin-left: 8px;
+		}
+
+		.download_info_status {
+			margin-left: 8px;
+			width: 80px;
+		}
+	}
+
+	&.slim {
+		> .download_object {
+			.download_info {
+				display: block;
+
+				img {
+					display: none;
+				}
+
+				.download_line {
+					display: inline-block;
+				}
+
+				.download_slim_separator {
+					display: inline-block;
+				}
+			}
+
+			.download_info_data {
+				width: calc(80% - 16px);
+				display: inline-block;
+				padding-left: 0px;
+			}
+
+			.download_info_status {
+				width: 20%;
+				display: inline-block; // ignored due tu float
+				float: right;
+			}
+		}
+	}
+
+	&::-webkit-scrollbar {
+		width: 10px;
+	}
+
+	&::-webkit-scrollbar-track {
+		background: var(--panels-background);
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: var(--panels-scroll);
+		border-radius: 4px;
+		width: 6px;
+		padding: 0px 2px;
+	}
+}
+
+.download_object {
+	> .download_bar {
+		display: flex;
+		align-items: center;
+		height: 24px;
+
+		> .queue_icon {
+			cursor: default;
+			margin-left: 8px;
+		}
+
+		> .progress {
+			margin: 0px;
+		}
+	}
+}
+
+#download_tab_container {
+	#queue_buttons {
+		position: absolute;
+		top: 0;
+		right: 0;
+		opacity: 1;
+		visibility: visible;
+		transition: all 250ms ease-in-out;
+	}
+
+	#download_tab_label {
+		opacity: 0;
+		visibility: hidden;
+		transition: all 250ms ease-in-out;
+	}
+}
+
+#download_tab_drag_handler {
+	width: 15px;
+	height: 100%;
+	position: absolute;
+	background-color: hsl(0, 0%, 20%);
+	cursor: ew-resize;
+}

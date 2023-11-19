@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!-- strings for settings -->
+	<string name="lyrics">Lyrics</string>
+	<string name="download_path">Percorso di download</string>
+	<string name="create_album_folders">Crea cartelle per gli album</string>
+	<string name="always_ask_for_quality">Chiedi sempre la qualità</string>
+	<string name="download_quality">Qualità download</string>
+	<string name="artist_sep">Separatore artista</string>
+	<string name="search_result_limit">Limite risultati ricerca</string>
+
+	<string-array name="download_quality_array">
+			<item>FLAC</item>
+			<item>MP3 320</item>
+			<item>MP3 128</item>
+	</string-array>
+
+	<string-array name="artist_sep_array">
+			<item>, con spazio</item>
+			<item>,</item>
+			<item>; con spazio</item>
+			<item>;</item>
+			<item>/ con spazio</item>
+			<item>/</item>
+			<item>&amp; con spazio</item>
+			<item>&amp;</item>
+			<item>Null char</item>
+	</string-array>
+
+	<string-array name="result_limit_array">
+			<item>25</item>
+			<item>50</item>
+			<item>75</item>
+			<item>100</item>
+	</string-array>
+
+	<!-- strings for the search bar -->
+	<string name="search_tracks">brani</string>
+	<string name="search_albums">album</string>
+	<string name="search_artists">artisti</string>
+	<string name="search_playlists">playlist</string>
+	<string name="search_deezer">Cerca %1$s…</string>
+
+	<!-- strings for bottom navigation -->
+	<string name="playlists">Playlist</string>
+	<string name="albums">Album</string>
+	<string name="artists">Artisti</string>
+	<string name="tracks">Brani</string>
+	<string name="settings">Impostazioni</string>
+
+	<!-- strings for buttons -->
+	<string name="okay">OK</string>
+	<string name="view_tracks">Vedi brani</string>
+	<string name="view_album">Vedi album</string>
+	<string name="download">Download</string>
+	<string name="cancel">Annulla</string>
+	<string name="view_albums">View albums</string>
+	<string name="close_button">Chiudi</string>
+	<string name="preview_button">Anteprima</string>
+	<string name="download_all_tracks">Scarica tutti i brani</string>
+	<string name="view_source_code">Vedi sorgente</string>
+
+	<!-- strings for informative popups -->
+	<string name="no_storage_perm">Devi autorizzare l\'utilizzo dell\'archivio interno per usare quest\'app!</string>
+	<string name="connection_error">Impossibile collegarsi a deezer.</string>
+	<string name="country_not_supported">Deezer non è disponibile e quest\'app potrebbe non funzionare in questo paese: %1$s</string>
+
+	<!-- strings for informative toasts -->
+	<string name="quality_not_available">%1$s non disponibile in %2$s</string>
+	<string name="already_downloaded">%1$s già scaricato</string>
+	<string name="successfully_downloaded">%1$s scaricato correttamente</string>
+
+	<!-- strings for notifications -->
+	<string name="service_running">AIDS in esecuzione</string>
+
+	<!-- descriptions for accessibility -->
+	<string name="search_button_description">bottone cerca</string>
+	<string name="back_button_description">bottone indietro</string>
+	<string name="album_art_description">copertina</string>
+	<string name="artist_art_description">immagine artista</string>
+	<string name="explicit_description">esplicito</string>
+	<string name="unreadable_description">illeggibile</string>
+</resources>

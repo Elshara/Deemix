@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2A2A2A</color>
+    <color name="colorAccent">#8296DC</color>
+
+    <color name="colorButtons">#2F2F2F</color>
+    <color name="colorNav">#2F2F2F</color>
+    <color name="colorCard">#262626</color>
+    <color name="colorBackground">#0C0C0C</color>
+    <color name="colorPopupBackground">#181818</color>
+
+    <color name="colorTextLight">#F5F5F5</color>
+    <color name="colorTextLightDimmed">#E0E0E0</color>
+    <color name="colorTextDimmed">#9E9E9E</color>
+
+    <color name="colorExplicit">#851818</color>
+    <color name="colorUnreadable">#F57F17</color>
+</resources>

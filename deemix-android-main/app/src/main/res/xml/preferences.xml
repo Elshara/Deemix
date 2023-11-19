@@ -1,0 +1,15 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        android:icon="@drawable/ic_baseline_get_app_24"
+        android:title="@string/download_header">
+        <ListPreference
+            android:defaultValue="1"
+            android:entries="@array/download_quality_entries"
+            android:entryValues="@array/download_quality_values"
+            android:icon="@drawable/ic_baseline_equalizer_24"
+            android:key="download_quality"
+            android:summary="@string/download_quality_description"
+            android:title="@string/download_quality" />
+    </PreferenceCategory>
+</PreferenceScreen>

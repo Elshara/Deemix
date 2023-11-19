@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settngsConstraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/CloseButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/colorButtons"
+        android:text="@string/close_button"
+        android:textAllCaps="false"
+        android:textColor="@color/colorTextLight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/VersionView" />
+
+    <Button
+        android:id="@+id/SourceButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/colorButtons"
+        android:text="@string/view_source_code"
+        android:textAllCaps="false"
+        android:textColor="@color/colorTextLight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/CloseButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Switch
+        android:id="@+id/LyricsSwitch"
+        android:layout_width="0dp"
+        android:layout_height="28dip"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/lyrics"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/AlbumFolderSwitch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:checked="true" />
+
+    <Switch
+        android:id="@+id/QualityAskSwitch"
+        android:layout_width="0dp"
+        android:layout_height="28dip"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/always_ask_for_quality"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/QualityIndicator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:checked="true" />
+
+    <Switch
+        android:id="@+id/AlbumFolderSwitch"
+        android:layout_width="0dp"
+        android:layout_height="28dip"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/create_album_folders"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/QualityAskSwitch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/DownloadPathIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="28dip"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_vertical"
+        android:text="@string/download_path"
+        android:textColor="@color/colorTextLight"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/LyricsSwitch"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/DownloadPathView"
+        android:layout_width="0dp"
+        android:layout_height="28dip"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        android:ellipsize="start"
+        android:gravity="center_vertical|end"
+        android:singleLine="true"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/LyricsSwitch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/DownloadPathIndicator" />
+
+    <TextView
+        android:id="@+id/VersionView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:text="@string/version_name"
+        android:textColor="@color/colorTextDimmed"
+        app:layout_constraintBottom_toBottomOf="@+id/CloseButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/CloseButton" />
+
+    <Spinner
+        android:id="@+id/QualitySpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="28dip"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        android:dropDownWidth="match_parent"
+        android:entries="@array/download_quality_array"
+        android:gravity="center_vertical|end"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toTopOf="@+id/ArtistSepSpinner"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/QualityIndicator"
+        android:layout_width="0dp"
+        android:layout_height="28dip"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_vertical"
+        android:text="@string/download_quality"
+        android:textColor="@color/colorTextLight"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/ArtistSepIndicator"
+        app:layout_constraintEnd_toStartOf="@+id/QualitySpinner"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/ArtistSepSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="28dip"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        android:dropDownWidth="match_parent"
+        android:entries="@array/artist_sep_array"
+        android:gravity="center_vertical|end"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toTopOf="@+id/ResultLimitSpinner"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/ArtistSepIndicator"
+        android:layout_width="0dp"
+        android:layout_height="28dip"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_vertical"
+        android:text="@string/artist_sep"
+        android:textColor="@color/colorTextLight"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/ResultLimitIndicator"
+        app:layout_constraintEnd_toStartOf="@+id/ArtistSepSpinner"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/ResultLimitSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="28dip"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:dropDownWidth="match_parent"
+        android:entries="@array/result_limit_array"
+        android:gravity="center_vertical|end"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toTopOf="@+id/CloseButton"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/ResultLimitIndicator"
+        android:layout_width="0dp"
+        android:layout_height="28dip"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_vertical"
+        android:text="@string/search_result_limit"
+        android:textColor="@color/colorTextLight"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/CloseButton"
+        app:layout_constraintEnd_toStartOf="@+id/ResultLimitSpinner"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

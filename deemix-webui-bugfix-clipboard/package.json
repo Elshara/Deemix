@@ -1,0 +1,45 @@
+{
+	"name": "deemix",
+	"version": "1.0.16",
+	"homepage": "https://codeberg.org/RemixDev/deemix-webui/src/master/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://codeberg.org/RemixDev/deemix-webui"
+	},
+	"scripts": {
+		"clean": "rimraf public/css/style.css public/css/style.css.map public/js/bundle.js public/js/bundle.js.map",
+		"watch:styles": "sass --watch --source-map --embed-sources src/styles/scss/style.scss public/css/style.css",
+		"build:styles": "sass --no-source-map --style=compressed src/styles/scss/style.scss public/css/style.css",
+		"build:js": "rollup -c",
+		"watch:js": "rollup -c -w",
+		"serve": "python ../server.py",
+		"dev": "npm-run-all --parallel serve watch:js watch:styles",
+		"build": "npm-run-all --sequential clean build:js build:styles"
+	},
+	"dependencies": {
+		"clipboard-polyfill": "^3.0.1",
+		"jquery": "^3.5.1",
+		"lodash-es": "^4.17.15",
+		"svg-country-flags": "^1.2.7",
+		"toastify-js": "^1.8.0",
+		"vue": "^2.6.11",
+		"vue-i18n": "^8.18.2",
+		"vue-router": "^3.3.4"
+	},
+	"devDependencies": {
+		"@rollup/plugin-alias": "^3.1.0",
+		"@rollup/plugin-commonjs": "^11.0.2",
+		"@rollup/plugin-node-resolve": "^8.0.1",
+		"@rollup/plugin-replace": "^2.3.2",
+		"node-sass": "^4.14.1",
+		"npm-run-all": "^4.1.5",
+		"rimraf": "^3.0.2",
+		"rollup": "^2.14.0",
+		"rollup-plugin-analyzer": "^3.2.3",
+		"rollup-plugin-svg": "^2.0.0",
+		"rollup-plugin-terser": "^6.1.0",
+		"rollup-plugin-vue": "^4.2.0",
+		"sass": "^1.26.8",
+		"vue-template-compiler": "^2.6.11"
+	}
+}

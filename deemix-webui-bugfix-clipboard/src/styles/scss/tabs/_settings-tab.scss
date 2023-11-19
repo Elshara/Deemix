@@ -1,0 +1,100 @@
+#settings_picture {
+	width: 125px;
+	height: 125px;
+}
+
+#logged_in_info {
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+#log_info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#open_login_prompt {
+	margin: 8px 0px;
+}
+
+.inline-flex input {
+	margin-bottom: 0px;
+}
+
+#spotify_icon {
+	width: 24px;
+	height: 24px;
+	fill: #1db954;
+	margin-right: 15px;
+}
+
+/* Settings group */
+.settings-group {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border-top: 1px solid var(--separator); /* Need less opacity */
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	> * {
+		margin-bottom: 15px;
+	}
+}
+
+/* Settings group header */
+.settings-group__header {
+	font-size: 1.5rem;
+	margin-bottom: 25px;
+
+	&.settings-group__header--with-icon {
+		display: inline-flex;
+		align-items: center;
+
+		i.material-icons {
+			margin-right: 15px;
+		}
+	}
+}
+
+/* Settings container */
+.settings-container {
+	display: flex;
+
+	&__half {
+		width: 50%;
+	}
+
+	&__third {
+		width: 33%;
+
+		&--only-checkbox {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: start;
+		}
+	}
+
+	&__half > *,
+	&__third > * {
+		margin-bottom: 15px;
+	}
+}
+
+/* Input group */
+.input_group {
+	margin-bottom: 25px;
+
+	.input_group_text {
+		margin-bottom: 7px;
+	}
+
+	.with_checkbox + & {
+		margin-top: 10px;
+	}
+}

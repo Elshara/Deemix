@@ -1,0 +1,11 @@
+.reload-button {
+	&.reload-button--inline {
+		display: inline-block;
+	}
+
+	&.spin {
+		i {
+			animation: spin 500ms infinite ease-out reverse;
+		}
+	}
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue">#FF1976d2</color>
+    <color name="dark_blue">#FF004ba0</color>
+    <color name="light_blue">#ff63a4ff</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary_background">#FFFFFF</color>
+    <color name="secondary_background">#ededed</color>
+    <color name="cards_background">#FFFFFF</color>
+    <color name="logo_text">#000000</color>
+</resources>

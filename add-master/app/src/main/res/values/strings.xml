@@ -1,0 +1,91 @@
+<resources>
+    <!-- placeholder crap -->
+    <string name="song_name_placeholder" translatable="false">Song Name</string>
+    <string name="album_name_placeholder" translatable="false">Album Name</string>
+    <string name="artist_name_placeholder" translatable="false">Artist Name</string>
+    <string name="tertiary_title_placeholder" translatable="false">Tertiary Title</string>
+    <string name="secondary_title_placeholder" translatable="false">Secondary Title</string>
+    <string name="primary_title_placeholder" translatable="false">Primary Title</string>
+    <string name="extra_info_view_placeholder" translatable="false">Extra Info View</string>
+
+    <!-- strings for settings -->
+    <string name="lyrics">Lyrics</string>
+    <string name="download_path">Download path</string>
+    <string name="create_album_folders">Create album folders</string>
+    <string name="always_ask_for_quality">Always ask for quality</string>
+    <string name="download_quality">Download quality</string>
+    <string name="artist_sep">Artist separator</string>
+    <string name="search_result_limit">Search result limit</string>
+
+    <string-array name="download_quality_array">
+        <item>FLAC</item>
+        <item>MP3 320</item>
+        <item>MP3 128</item>
+    </string-array>
+
+    <string-array name="artist_sep_array">
+        <item>, with space</item>
+        <item>,</item>
+        <item>; with space</item>
+        <item>;</item>
+        <item>/ with space</item>
+        <item>/</item>
+        <item>&amp; with space</item>
+        <item>&amp;</item>
+        <item>Null char</item>
+    </string-array>
+
+    <string-array name="result_limit_array">
+        <item>25</item>
+        <item>50</item>
+        <item>75</item>
+        <item>100</item>
+    </string-array>
+
+    <!-- strings for the search bar -->
+    <string name="search_tracks">tracks</string>
+    <string name="search_albums">albums</string>
+    <string name="search_artists">artists</string>
+    <string name="search_playlists">playlists</string>
+    <string name="search_deezer">Search %1$s…</string>
+
+    <!-- strings for bottom navigation -->
+    <string name="playlists">Playlists</string>
+    <string name="albums">Albums</string>
+    <string name="artists">Artists</string>
+    <string name="tracks">Tracks</string>
+    <string name="settings">Settings</string>
+
+    <!-- strings for buttons -->
+    <string name="okay">Okay</string>
+    <string name="view_tracks">View tracks</string>
+    <string name="view_album">View album</string>
+    <string name="download">Download</string>
+    <string name="cancel">Cancel</string>
+    <string name="view_albums">View albums</string>
+    <string name="close_button">Close</string>
+    <string name="preview_button">Preview</string>
+    <string name="download_all_tracks">Download all tracks</string>
+    <string name="view_source_code">View source</string>
+
+    <!-- strings for informative popups -->
+    <string name="no_storage_perm">Internal storage permission is required to use this app!</string>
+    <string name="connection_error">Couldn\'t connect to Deezer.</string>
+    <string name="country_not_supported">Deezer is not available and this app may not work in the detected country: %1$s</string>
+
+    <!-- strings for informative toasts -->
+    <string name="quality_not_available">%1$s not available in %2$s</string>
+    <string name="already_downloaded">%1$s already downloaded</string>
+    <string name="successfully_downloaded">%1$s successfully downloaded</string>
+
+    <!-- strings for notifications -->
+    <string name="service_running">AIDS is running</string>
+
+    <!-- descriptions for accessibility -->
+    <string name="search_button_description">search button</string>
+    <string name="back_button_description">back button</string>
+    <string name="album_art_description">album art</string>
+    <string name="artist_art_description">artist art</string>
+    <string name="explicit_description">explicit</string>
+    <string name="unreadable_description">unreadable</string>
+</resources>

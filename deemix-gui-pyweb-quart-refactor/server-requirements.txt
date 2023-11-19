@@ -1,0 +1,5 @@
+deemix>=2.0.5
+deezer-py>=0.0.10
+quart
+quart-cors
+nest_asyncio

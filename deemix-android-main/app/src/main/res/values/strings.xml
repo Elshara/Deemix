@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Deezer Downloader</string>
+    <string name="settings">Settings</string>
+    <string name="downloadInputHint">URL...</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="account_header">Account</string>
+    <string name="download_header">Downloads</string>
+
+    <!-- Account Preferences -->
+    <string name="logout_button">Logout</string>
+
+    <!-- Download Preferences -->
+    <string name="download_quality">Download quality</string>
+    <string name="download_quality_description">Choose at which quality to download the tracks</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Log in</string>
+    <string name="title_activity_login">Login</string>
+    <string name="cover_image">Cover Image</string>
+    <string name="userAvatar_description">User\'s Avatar</string>
+</resources>

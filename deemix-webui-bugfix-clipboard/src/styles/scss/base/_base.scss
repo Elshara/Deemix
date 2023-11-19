@@ -1,0 +1,84 @@
+html {
+	--main-scroll: hsl(0, 0%, 33%);
+	--panels-scroll: hsl(180, 2%, 17%);
+	--tag-background: hsl(210, 100%, 38%);
+	--tag-text: hsl(0, 0%, 100%);
+	--toast-background: hsla(0, 0%, 0%, 0.867);
+	--toast-secondary: hsla(0, 0%, 100%, 0.133);
+	--toast-text: hsla(0, 0%, 100%, 0.871);
+	--separator: hsl(0, 0%, 50%);
+}
+
+html[data-theme='light'] {
+	--main-background: hsl(0, 0%, 100%);
+	--secondary-background: hsl(0, 0%, 93%);
+	--foreground: hsl(0, 0%, 20%);
+	--foreground-inverted: hsl(0, 0%, 93%);
+	--accent-color: hsl(210, 100%, 52%);
+	--panels-background: hsl(210, 3%, 14%);
+	--panels-text: hsl(0, 0%, 100%);
+	--accent-text: hsl(0, 0%, 0%);
+
+	--sidebar-link-bg: hsl(0, 0%, 24%);
+	--sidebar-link-bg-20: hsla(0, 0%, 24%, 0.2);
+	
+	--icon-hover: var(--accent-color);
+
+	--table-bg: hsl(0, 0%, 100%);
+	--table-zebra: hsl(0, 0%, 90%);
+	--table-highlight: hsl(0, 0%, 84%);
+}
+
+html[data-theme='dark'] {
+	--main-background: hsl(0, 0%, 8%);
+	--secondary-background: hsl(0, 0%, 14%);
+	--foreground: hsl(0, 0%, 93%);
+	--foreground-inverted: hsl(0, 0%, 20%);
+	--accent-color: hsl(210, 100%, 52%);
+	--panels-background: hsl(0, 0%, 10%);
+	--panels-text: hsl(0, 0%, 100%);
+	--accent-text: hsl(0, 0%, 87%);
+
+	--sidebar-link-bg: hsl(0, 0%, 24%);
+	--sidebar-link-bg-20: hsla(0, 0%, 24%, 0.2);
+
+	--icon-hover: var(--accent-color);
+
+	--table-bg: hsl(0, 0%, 8%);
+	--table-zebra: hsl(0, 0%, 14%);
+	--table-highlight: hsl(0, 0%, 20%);
+}
+
+html[data-theme='purple'] {
+	--main-background: hsl(261, 74%, 6%);
+	--secondary-background: hsl(257, 61%, 10%);
+	--foreground: hsl(0, 0%, 93%);
+	--foreground-inverted: hsl(258, 62%, 8%);
+	--accent-color: hsl(261, 85%, 37%);
+	--panels-background: hsl(257, 70%, 9%);
+	--panels-text: hsl(0, 0%, 100%);
+	--accent-text: hsl(0, 0%, 87%);
+
+	--sidebar-link-bg: hsl(257, 70%, 17%);
+	--sidebar-link-bg-20: hsla(257, 70%, 17%, 0.2);
+
+	--icon-hover: hsl(186, 44%, 54%);
+
+	--table-bg: hsl(261, 74%, 6%);
+	--table-zebra: hsl(257, 61%, 10%);
+	--table-highlight: hsl(257, 66%, 27%);
+}
+
+html {
+	height: 100vh;
+}
+
+body {
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+	font-family: 'Open Sans';
+	overflow: hidden;
+	background: var(--main-background);
+	color: var(--foreground);
+}

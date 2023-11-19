@@ -1,0 +1,34 @@
+__pycache__
+*/__pycache__
+
+.DS_Store
+node_modules
+package-lock.json
+
+# pyinstaller build dirs
+/dist
+/build
+
+# local env files
+/env/
+/venv/
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+# .vscode
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Private configs
+/config.py
+tailwind.config.full.js

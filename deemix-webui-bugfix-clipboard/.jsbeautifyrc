@@ -1,0 +1,19 @@
+{
+	"css": {
+		"allowed_file_extensions": [
+			"css",
+			"scss",
+			"sass",
+			"less"
+		],
+		"end_with_newline": true,
+		"indent_char": " ",
+		"indent_size": 2,
+		"indent_with_tabs": true,
+		"newline_between_rules": true,
+		"selector_separator": " ",
+		"selector_separator_newline": false,
+		"preserve_newlines": true,
+		"max_preserve_newlines": 3
+	}
+}

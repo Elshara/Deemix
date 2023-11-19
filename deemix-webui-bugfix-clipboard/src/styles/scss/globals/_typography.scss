@@ -1,0 +1,17 @@
+.page_heading {
+	font-size: 2.5rem;
+	margin-bottom: 35px;
+
+	&--capitalize {
+		text-transform: capitalize;
+	}
+
+	&--uppercase {
+		text-transform: uppercase;
+	}
+}
+
+.section_heading {
+	font-size: 1.75rem;
+	margin-bottom: 25px;
+}

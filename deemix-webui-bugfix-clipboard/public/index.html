@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+	<head>
+		<meta charset="utf-8">
+		<title>deemix</title>
+		<link rel="stylesheet" type="text/css" href="/public/css/vendor/animate.css">
+		<link rel="stylesheet" type="text/css" href="/public/css/vendor/material-icons.css">
+		<link rel="stylesheet" type="text/css" href="/public/css/vendor/OpenSans.css">
+		<link rel="stylesheet" type="text/css" href="/public/css/vendor/toastify.css">
+		<link rel="stylesheet" type="text/css" href="/public/css/style.css">
+		<link rel="shortcut icon" href="/public/favicon.ico">
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0">
+		<script>
+			if (localStorage.getItem('selectedTheme')) {
+				document.documentElement.setAttribute('data-theme', localStorage.getItem('selectedTheme'))
+			}
+		</script>
+	</head>
+
+	<body>
+		<div id="app"></div>
+	</body>
+
+	<script type="text/javascript" src="/public/js/vendor/socket.io.js"></script>
+
+	<script src="/public/js/bundle.js"></script>
+
+</html>
